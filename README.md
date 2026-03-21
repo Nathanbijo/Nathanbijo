@@ -80,18 +80,6 @@
 
 ---
 
-## 🚀 Featured Projects
-
-<div align="center">
-
-[![WARESYS](https://github-readme-stats.vercel.app/api/pin/?username=Nathanbijo&repo=waresys-mvp&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=c9d1d9)](https://github.com/Nathanbijo/WARESYS)
-&nbsp;
-[![MarketFlow](https://github-readme-stats.vercel.app/api/pin/?username=Nathanbijo&repo=Content-strategy-MVP&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=c9d1d9)](https://github.com/Nathanbijo/MarketFlow)
-
-</div>
-
----
-
 ## 🏆 Highlights
 
 ```
