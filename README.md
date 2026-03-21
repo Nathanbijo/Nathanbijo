@@ -16,25 +16,9 @@
 <br/>
 
 <!-- Terminal-style About Block -->
-```bash
-┌──(nathan㉿dev)-[~/]
-└─$ cat about.txt
-
-  🎓  B.Tech CSBS @ RSET | Honors in Cryptography | CGPA: 8.79
-  🔧  Backend: FastAPI · Node.js · Express · REST APIs
-  🤖  AI/ML:   LLM integration · OCR pipelines · Groq API
-  🛢️  Data:    PostgreSQL · MongoDB · Redis · Celery
-  🐳  Infra:   Docker · JWT Auth · Async Processing
-  🌐  Web:     React · Tailwind CSS
-  📍  Kerala, India
-
-┌──(nathan㉿dev)-[~/]
-└─$ cat current_focus.txt
-
-  ⚡  Building intelligent automation systems
-  🔐  Applied Cryptography & secure backend architectures
-  🚀  Internships in Backend / Applied AI engineering
-```
+<div align="center">
+  <img src="./assets/terminal.svg" alt="Terminal" width="680"/>
+</div>
 
 <br/>
 
