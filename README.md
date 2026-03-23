@@ -64,16 +64,6 @@
 
 ---
 
-## 🏆 Highlights
-
-```
-🥇  Finalist — Neurobots AI Hackathon @ IIT Palakkad (National Level)
-📄  College-funded Patent Filing — WARESYS Invoice Automation System
-🎖️  NPTEL Elite Certification — Design & Engineering of Computer Systems
-📱  RSET Certification — Mobile App Development with Flutter
-🔬  Data Science Intern — NeST Digital, Aluva (May–Jun 2025)
-```
-
 ---
 
 ## 🐍 Contribution Graph
