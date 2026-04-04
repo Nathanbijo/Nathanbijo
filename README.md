@@ -65,17 +65,10 @@
 ---
 
 ## 📊 Contribution Graph
-
-## 📊 Contribution Graph
-
-<div align="center">
-
 <img
   alt="3d github contribution graph"
-  src="./profile-3d-contrib/profile-green-animate.svg"
+  src="./profile-3d-contrib/profile-night-green.svg"
 />
-
-</div>
 
 ---
 
