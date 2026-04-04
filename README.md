@@ -52,13 +52,9 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Nathanbijo&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=c9d1d9" height="180"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nathanbijo&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=c9d1d9" height="180"/>
-
-<br/>
-
-<img src="https://streak-stats.demolab.com?user=Nathanbijo&theme=tokyonight&hide_border=true&background=0D1117&ring=00FF41&fire=00FF41&currStreakLabel=00FF41" height="165"/>
-
+<img src="https://github-readme-stats.vercel.app/api?username=Nathanbijo&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=c9d1d9" height="180"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nathanbijo&layout=compact&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=c9d1d9" height="180"/>
+<img src="https://streak-stats.demolab.com/?user=Nathanbijo&theme=tokyonight&hide_border=true&background=0D1117&ring=00FF41&fire=00FF41&currStreakLabel=00FF41" height="165"/>
 </div>
 
 ---
