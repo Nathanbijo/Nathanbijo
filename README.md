@@ -1,76 +1,101 @@
 <div align="center">
 
-<!-- Profile Views + Social Badges -->
-![Profile Views](https://komarev.com/ghpvc/?username=Nathanbijo&color=00ff41&style=flat-square&label=PROFILE+VIEWS)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/nathan-bijo)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=Firefox-Browser&logoColor=00ff41)](https://nathanbijo.dev)
-[![Email](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:nathan.bijo@gmail.com)
+<img src="./assets/signature.svg" alt="Hi, I'm Nathan" width="520"/>
 
-<br/>
+<samp>BACKEND ENGINEERING &nbsp;·&nbsp; APPLIED AI &nbsp;·&nbsp; SOFTWARE SYSTEMS</samp>
 
-<!-- Typing SVG Animation -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Nathan+Bijo+%F0%9F%91%BE;Backend+Engineer+%7C+Applied+AI;Building+systems+that+actually+work;Honors+in+Cryptography+%F0%9F%94%90)](https://git.io/typing-svg)
+<br/><br/>
 
-</div>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/nathan-bijo)
+[![Portfolio](https://img.shields.io/badge/nathanbijo.dev-1E293B?style=flat-square&logo=googlechrome&logoColor=88C0D0)](https://nathanbijo.dev)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:nathan.bijo@gmail.com)
 
-<br/>
-
-<!-- Terminal-style About Block -->
-<div align="center">
-  <img src="./assets/terminal.svg" alt="Terminal" width="680"/>
 </div>
 
 <br/>
 
----
+Backends, cryptography, and a weakness for problems that live in the messy part —
+crooked invoice scans, streets nobody has mapped, data that refuses to behave.
 
-## 🛠️ Tech Arsenal
+<samp>**NOW** ▸ building [**Padosi**](https://github.com/Nathanbijo/padosi) · simulation software at STEAG Energy</samp>
+
+<br/>
+
+## Selected Work
 
 <div align="center">
 
-**Languages**
+<img src="./assets/projects.svg" alt="WARESYS, MarketFlow and Padosi" width="100%"/>
 
-[![My Skills](https://skillicons.dev/icons?i=python,js,c,cpp,sql&perline=10)](https://skillicons.dev)
-
-**Backend & APIs**
-
-[![My Skills](https://skillicons.dev/icons?i=fastapi,nodejs,express&perline=10)](https://skillicons.dev)
-
-**Databases & Infra**
-
-[![My Skills](https://skillicons.dev/icons?i=postgres,mysql,sqlite,mongodb,redis,docker,celery&perline=10)](https://skillicons.dev)
-
-**Frontend & Tools**
-
-[![My Skills](https://skillicons.dev/icons?i=react,tailwind,html,css,git,github,vscode&perline=10)](https://skillicons.dev)
+<samp>
+<a href="https://github.com/Nathanbijo/waresys"><b>WARESYS</b></a> &nbsp;·&nbsp;
+<a href="https://github.com/Nathanbijo/marketflow"><b>MarketFlow</b></a> &nbsp;·&nbsp;
+<a href="https://github.com/Nathanbijo/padosi"><b>Padosi</b></a>
+</samp>
 
 </div>
 
----
+<sub>Each repository has its own README with architecture notes and setup.</sub>
 
-## 📊 GitHub Stats
+<br/>
+
+## Stack
 
 <div align="center">
-<img src="https://streak-stats.demolab.com/?user=Nathanbijo&theme=tokyonight&hide_border=true&background=0D1117&ring=00FF41&fire=00FF41&currStreakLabel=00FF41" height="165"/>
+
+<img src="https://cdn.simpleicons.org/python" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/javascript" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/c" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/cplusplus" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/gnubash" height="22"/>
+<br/><samp><sub>LANGUAGES</sub></samp>
+
+<br/>
+
+<img src="https://cdn.simpleicons.org/fastapi" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/nodedotjs" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/express/E6EDF3" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/pydantic" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/sqlalchemy/E6EDF3" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/celery" height="22"/>
+<br/><samp><sub>BACKEND</sub></samp>
+
+<br/>
+
+<img src="https://cdn.simpleicons.org/postgresql" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/mysql" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/sqlite" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/mongodb" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/redis" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/pandas/E6EDF3" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/numpy" height="22"/>
+<br/><samp><sub>DATA</sub></samp>
+
+<br/>
+
+<img src="https://cdn.simpleicons.org/scikitlearn" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/opencv" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/meta" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/ollama/E6EDF3" height="22"/>
+<br/><samp><sub>APPLIED AI</sub></samp>
+
+<br/>
+
+<img src="https://cdn.simpleicons.org/qt" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/react" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/nextdotjs/E6EDF3" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/tailwindcss" height="22"/>
+<br/><samp><sub>SIMULATION &amp; UI</sub></samp>
+
+<br/>
+
+<img src="https://cdn.simpleicons.org/docker" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/linux" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/git" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/githubactions" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/supabase" height="22"/>
+<br/><samp><sub>INFRA</sub></samp>
+
+<br/>
+
+<img src="https://cdn.simpleicons.org/jsonwebtokens/E6EDF3" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/letsencrypt" height="22"/>&nbsp;&nbsp;<img src="https://cdn.simpleicons.org/gnuprivacyguard/E6EDF3" height="22"/>
+<br/><samp><sub>SECURITY</sub></samp>
+
 </div>
 
----
+<br/>
 
-## 📊 Contribution Graph
-<img
-  alt="3d github contribution graph"
-  src="./profile-3d-contrib/profile-night-green.svg"
-/>
+## Activity
+
+<div align="center">
+
+<img src="https://isometric-contributions-spectrewolf8.onrender.com/api/graph?username=Nathanbijo&theme=dark&stats=true&width=1200&height=560" alt="Contribution graph"/>
+
+<br/><br/>
+
+<img src="./assets/languages.svg" alt="Most used languages" width="470"/>
+
+</div>
+
+<br/>
 
 ---
 
 <div align="center">
-
-```bash
-┌──(nathan㉿dev)-[~/]
-└─$ echo "Thanks for visiting. Let's build something."
-```
-
-*Open to Backend / Applied AI internships · Available for collabs*
-
+<sub>Neurobots finalist · IIT Palakkad &nbsp;·&nbsp; All commits GPG-signed</sub>
 </div>
