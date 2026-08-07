@@ -59,13 +59,13 @@ text, tspan {white-space: pre;}
 <tspan x="715.0" y="50" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="732.0" y="50" class="key" textLength="17.0" lengthAdjust="spacingAndGlyphs">OS</tspan>
 <tspan x="749.0" y="50" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
-<tspan x="757.5" y="50" class="cc" textLength="289.0" lengthAdjust="spacingAndGlyphs"> ................................ </tspan>
-<tspan x="1046.5" y="50" class="value" textLength="178.5" lengthAdjust="spacingAndGlyphs">Fedora Linux, Android</tspan>
+<tspan x="757.5" y="50" class="cc" textLength="212.5" lengthAdjust="spacingAndGlyphs"> ....................... </tspan>
+<tspan x="970.0" y="50" class="value" textLength="255.0" lengthAdjust="spacingAndGlyphs">Fedora Linux, Windows, Android</tspan>
 <tspan x="715.0" y="70" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="732.0" y="70" class="key" textLength="51.0" lengthAdjust="spacingAndGlyphs">Uptime</tspan>
 <tspan x="783.0" y="70" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
-<tspan x="791.5" y="70" class="cc" textLength="229.5" lengthAdjust="spacingAndGlyphs"> ......................... </tspan>
-<tspan x="1021.0" y="70" class="value" textLength="204.0" lengthAdjust="spacingAndGlyphs">— (set START_DATE below)</tspan>
+<tspan x="791.5" y="70" class="cc" textLength="212.5" lengthAdjust="spacingAndGlyphs"> ....................... </tspan>
+<tspan x="1004.0" y="70" class="value" textLength="221.0" lengthAdjust="spacingAndGlyphs">20 years, 7 months, 3 days</tspan>
 <tspan x="715.0" y="90" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="732.0" y="90" class="key" textLength="34.0" lengthAdjust="spacingAndGlyphs">Host</tspan>
 <tspan x="766.0" y="90" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
@@ -79,16 +79,16 @@ text, tspan {white-space: pre;}
 <tspan x="715.0" y="130" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="732.0" y="130" class="key" textLength="25.5" lengthAdjust="spacingAndGlyphs">IDE</tspan>
 <tspan x="757.5" y="130" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
-<tspan x="766.0" y="130" class="cc" textLength="331.5" lengthAdjust="spacingAndGlyphs"> ..................................... </tspan>
-<tspan x="1097.5" y="130" class="value" textLength="127.5" lengthAdjust="spacingAndGlyphs">VS Code, Neovim</tspan>
+<tspan x="766.0" y="130" class="cc" textLength="289.0" lengthAdjust="spacingAndGlyphs"> ................................ </tspan>
+<tspan x="1055.0" y="130" class="value" textLength="170.0" lengthAdjust="spacingAndGlyphs">VS Code, Antigravity</tspan>
 <tspan x="715.0" y="150" class="cc">. </tspan>
 <tspan x="715.0" y="170" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="732.0" y="170" class="key" textLength="76.5" lengthAdjust="spacingAndGlyphs">Languages</tspan>
 <tspan x="808.5" y="170" class="key" textLength="8.5" lengthAdjust="spacingAndGlyphs">.</tspan>
 <tspan x="817.0" y="170" class="key" textLength="93.5" lengthAdjust="spacingAndGlyphs">Programming</tspan>
 <tspan x="910.5" y="170" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
-<tspan x="919.0" y="170" class="cc" textLength="59.5" lengthAdjust="spacingAndGlyphs"> ..... </tspan>
-<tspan x="978.5" y="170" class="value" textLength="246.5" lengthAdjust="spacingAndGlyphs">Python, TypeScript, Java, SQL</tspan>
+<tspan x="919.0" y="170" class="cc" textLength="42.5" lengthAdjust="spacingAndGlyphs"> ... </tspan>
+<tspan x="961.5" y="170" class="value" textLength="263.5" lengthAdjust="spacingAndGlyphs">Python, TypeScript, SQL, C, C++</tspan>
 <tspan x="715.0" y="190" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="732.0" y="190" class="key" textLength="76.5" lengthAdjust="spacingAndGlyphs">Languages</tspan>
 <tspan x="808.5" y="190" class="key" textLength="8.5" lengthAdjust="spacingAndGlyphs">.</tspan>
