@@ -1,5 +1,3 @@
-## Neofetch
-
 <div align="center">
 
 <picture>
