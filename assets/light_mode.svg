@@ -159,12 +159,12 @@ text, tspan {white-space: pre;}
 <tspan x="732.0" y="510" class="key" textLength="42.5" lengthAdjust="spacingAndGlyphs">Repos</tspan>
 <tspan x="774.5" y="510" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
 <tspan x="783.0" y="510" class="cc" textLength="433.5" lengthAdjust="spacingAndGlyphs"> ................................................. </tspan>
-<tspan x="1216.5" y="510" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">—</tspan>
+<tspan x="1216.5" y="510" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">9</tspan>
 <tspan x="715.0" y="530" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="732.0" y="530" class="key" textLength="42.5" lengthAdjust="spacingAndGlyphs">Stars</tspan>
 <tspan x="774.5" y="530" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
 <tspan x="783.0" y="530" class="cc" textLength="433.5" lengthAdjust="spacingAndGlyphs"> ................................................. </tspan>
-<tspan x="1216.5" y="530" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">—</tspan>
+<tspan x="1216.5" y="530" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">2</tspan>
 <tspan x="715.0" y="550" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="732.0" y="550" class="key" textLength="59.5" lengthAdjust="spacingAndGlyphs">Commits</tspan>
 <tspan x="791.5" y="550" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
@@ -174,5 +174,5 @@ text, tspan {white-space: pre;}
 <tspan x="732.0" y="570" class="key" textLength="76.5" lengthAdjust="spacingAndGlyphs">Followers</tspan>
 <tspan x="808.5" y="570" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
 <tspan x="817.0" y="570" class="cc" textLength="399.5" lengthAdjust="spacingAndGlyphs"> ............................................. </tspan>
-<tspan x="1216.5" y="570" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">—</tspan>
+<tspan x="1216.5" y="570" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">4</tspan>
 </text></svg>
