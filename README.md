@@ -21,6 +21,24 @@ crooked invoice scans, streets nobody has mapped, data that refuses to behave.
 
 <br/>
 
+## Neofetch
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_mode.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/light_mode.svg">
+  <img alt="neofetch-style profile card" src="./assets/dark_mode.svg" width="100%"/>
+</picture>
+
+<br/><br/>
+
+<img src="https://isometric-contributions-spectrewolf8.onrender.com/api/graph?username=Nathanbijo&theme=dark&stats=true&width=1200&height=560" alt="Contribution graph"/>
+
+</div>
+
+<br/>
+
 ## Selected Work
 
 <div align="center">
@@ -80,13 +98,9 @@ crooked invoice scans, streets nobody has mapped, data that refuses to behave.
 
 <br/>
 
-## Activity
+## Languages
 
 <div align="center">
-
-<img src="https://isometric-contributions-spectrewolf8.onrender.com/api/graph?username=Nathanbijo&theme=dark&stats=true&width=1200&height=560" alt="Contribution graph"/>
-
-<br/><br/>
 
 <img src="./assets/languages.svg" alt="Most used languages" width="470"/>
 

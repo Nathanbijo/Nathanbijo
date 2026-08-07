@@ -261,7 +261,7 @@ def main():
     stats = dict(PLACEHOLDER_STATS)
     stats["UPTIME"] = compute_uptime()
     if args.live:
-        stats.update(fetch_live_stats(os.environ.get("ACCESS_TOKEN")))
+        stats.update(fetch_live_stats(os.environ.get("GH_PAT")))
 
     check_overflow(stats)
 
