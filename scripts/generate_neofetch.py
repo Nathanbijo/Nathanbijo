@@ -65,7 +65,7 @@ PLACEHOLDER_STATS = {
     "REPOS": "\u2014", "STARS": "\u2014", "COMMITS": "\u2014", "FOLLOWERS": "\u2014",
     "UPTIME": "\u2014 (set START_DATE below)",
 }
-START_DATE = None  # e.g. "2022-07-01" — decide what "Uptime" measures for you
+START_DATE = "2006-01-04"  # e.g. "2022-07-01" — decide what "Uptime" measures for you
 
 # Colors taken literally from the two HTML exports — not restyled.
 THEMES = {
