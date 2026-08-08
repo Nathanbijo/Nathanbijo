@@ -1,5 +1,5 @@
 <div align="center">
-
+![Neofetch Stats](https://neofetch-profile.vercel.app/api?username=nathanbijo)
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_mode.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/light_mode.svg">
