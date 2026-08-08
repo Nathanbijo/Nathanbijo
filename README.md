@@ -1,5 +1,3 @@
-![Neofetch Stats](https://neofetch-profile.vercel.app/api?username=nathanbijo)
-
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_mode.svg">
