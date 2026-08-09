@@ -17,6 +17,7 @@ In CI:         python3 scripts/generate_neofetch.py --theme dark --live
 """
 import argparse
 import os
+import sys
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -170,11 +171,13 @@ def _commits_and_contributed(token, headers):
     import datetime
 
     if not token:
+        print("::warning::commits/contributed skipped — no GH_PAT token", file=sys.stderr)
         return None, None
     try:
         user = _github_get(f"https://api.github.com/users/{GITHUB_USER}", headers)
         start_year = int(user["created_at"][:4])
-    except Exception:
+    except Exception as e:
+        print(f"::warning::commits/contributed: couldn't fetch user info: {e!r}", file=sys.stderr)
         return None, None
 
     query = """
@@ -197,11 +200,15 @@ def _commits_and_contributed(token, headers):
               else datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"))
         try:
             data = _github_graphql(query, {"login": GITHUB_USER, "from": frm, "to": to}, headers)
+            if "errors" in data:
+                print(f"::warning::commits/contributed GraphQL error for {year}: {data['errors']}", file=sys.stderr)
+                continue
             cc = data["data"]["user"]["contributionsCollection"]
             total_commits += cc["totalCommitContributions"]
             for node in cc["commitContributionsByRepository"]:
                 contributed.add(node["repository"]["nameWithOwner"])
-        except Exception:
+        except Exception as e:
+            print(f"::warning::commits/contributed failed for {year}: {e!r}", file=sys.stderr)
             continue
     return total_commits, len(contributed)
 
@@ -244,7 +251,8 @@ def _lines_of_code(repos, token, user_info):
                      "--perl-regexp", "--pretty=tformat:", "--numstat"],
                     check=True, timeout=90, capture_output=True, text=True,
                 ).stdout
-            except Exception:
+            except Exception as e:
+                print(f"::warning::LOC skip {repo['name']}: {e!r}", file=sys.stderr)
                 continue
             for line in out.splitlines():
                 parts = line.split("\t")
