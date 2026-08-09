@@ -31,13 +31,13 @@ ART_FILES = {
 # ---------------------------------------------------------------------------
 FIELDS = [
     ("nathan@bijo", [
-        ("OS", "Fedora Linux, Android"),
+        ("OS", "Fedora Linux, Windows, Android"),
         ("Uptime", "{{UPTIME}}"),
         ("Host", "STEAG Energy Services"),
         ("Kernel", "Simulation Software Engineering Intern"),
-        ("IDE", "VS Code, Neovim"),
+        ("IDE", "VS Code, Antigravity"),
         None,
-        ("Languages.Programming", "Python, TypeScript, Java, SQL"),
+        ("Languages.Programming", "Python, TypeScript, SQL, C, C++"),
         ("Languages.Computer", "HTML, CSS, JSON, LaTeX, YAML"),
         ("Languages.Real", "English, Malayalam, Hindi"),
         None,
