@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://github.com/Nathanbijo"><img src="https://cdn.simpleicons.org/github/E6EDF3" height="28"/></a>   <a href="https://linkedin.com/in/nathan-bijo"><img src="https://api.iconify.design/logos/linkedin-icon.svg" height="28"/></a>   <a href="https://nathanbijo.dev"><img src="https://cdn.simpleicons.org/googlechrome" height="28"/></a>   <a href="mailto:nathan.bijo@gmail.com"><img src="https://cdn.simpleicons.org/gmail" height="28"/></a>
+<a href="https://linkedin.com/in/nathan-bijo"><img src="large/colored/linkedin.svg" height="28"/></a>   <a href="https://nathanbijo.dev"><img src="https://cdn.simpleicons.org/googlechrome" height="28"/></a>   <a href="mailto:nathan.bijo@gmail.com"><img src="https://cdn.simpleicons.org/gmail" height="28"/></a>
 </div> <br/>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_mode.svg">
