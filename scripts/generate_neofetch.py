@@ -39,31 +39,28 @@ ART_FILES = {
 # ---------------------------------------------------------------------------
 FIELDS = [
     ("nathan@bijo", [
-        ("OS", "Fedora Linux, Android"),
+        ("OS", "Fedora Linux, Windows, Android"),
         ("Uptime", "{{UPTIME}}"),
         ("Host", "STEAG Energy Services"),
         ("Kernel", "Simulation Software Engineering Intern"),
-        ("IDE", "VS Code, Neovim"),
+        ("IDE", "VS Code, Antigravity"),
         None,
         ("Languages.Programming", "Python, JavaScript, SQL, C, C++"),
         ("Languages.Computer", "HTML, CSS, JSON, LaTeX, YAML"),
         ("Languages.Real", "English, Malayalam, Hindi"),
         ("Backend", "FastAPI, Express, PostgreSQL, Docker"),
         None,
-        ("Projects.WARESYS", "OCR invoice-to-inventory, 95% acc., patent-pending"),
+        ("Projects.WARESYS", "OCR invoice-to-inventory, patent published"),
         ("Projects.MarketFlow", "URL to branded posts via Llama 3"),
         ("Projects.Padosi", "Kochi liveability + knowledge map [WIP]"),
-        None,
-        ("Honors", "Cryptography, Neurobots Finalist @ IIT Palakkad"),
     ]),
     ("- Contact", [
         ("Email.Personal", "nathan.bijo@gmail.com"),
         ("LinkedIn", "nathan-bijo"),
-        ("GitHub", GITHUB_USER),
         ("Portfolio", "nathanbijo.dev"),
     ]),
     ("- GitHub Stats", [
-        ("Repos", "{{REPOS}} {Contributed: {{CONTRIB}}}"),
+        ("Repos", "{{REPOS}}"),
         ("Commits", "{{COMMITS}}"),
         ("Lines of Code on GitHub", [
             ("{{LOC}}", "value"), (" ( ", "cc"),
@@ -79,7 +76,7 @@ PLACEHOLDER_STATS = {
     "UPTIME": "\u2014 (set START_DATE below)",
 }
 STAT_KEYS = ("REPOS", "CONTRIB", "COMMITS", "LOC", "LOC_ADD", "LOC_DEL", "UPTIME")
-START_DATE = None  # e.g. "2022-07-01" — decide what "Uptime" measures for you
+START_DATE = "2006-01-04"  # e.g. "2022-07-01" — decide what "Uptime" measures for you
 
 # Colors taken literally from the two HTML exports — not restyled.
 THEMES = {
