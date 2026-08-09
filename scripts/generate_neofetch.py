@@ -41,7 +41,7 @@ ART_FILES = {
 FIELDS = [
     ("nathan@bijo", [
         ("OS", "Fedora Linux, Windows, Android"),
-        ("Uptime", "{{UPTIME}}"),
+        ("Uptime", "{{START_DATE}}"),
         ("Host", "STEAG Energy Services"),
         ("Kernel", "Simulation Software Engineering Intern"),
         ("IDE", "VS Code, Antigravity"),
