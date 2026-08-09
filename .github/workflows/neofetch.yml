@@ -16,6 +16,14 @@ on:
       - "assets/ascii-portrait-light.txt"
       - ".github/workflows/neofetch.yml"
 
+# Only one of these should ever be running at a time. Without this, two
+# manual "Run workflow" clicks close together both check out the same
+# starting commit, both compute the correct SVG, and whichever pushes
+# second gets rejected — which the old workflow ate silently (see below).
+concurrency:
+  group: neofetch-card
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -39,8 +47,32 @@ jobs:
 
       - name: Commit if changed
         run: |
+          set -e
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/dark_mode.svg assets/light_mode.svg
-          git diff --staged --quiet || git commit -m "chore: refresh neofetch card"
-          git push
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit — SVGs are already up to date."
+            exit 0
+          fi
+
+          git commit -m "chore: refresh neofetch card"
+
+          # Retry with rebase instead of failing silently. The old version
+          # of this step had no error handling at all: if `git push` was
+          # rejected (e.g. two runs overlapped and this one's base was now
+          # stale), bash just moved on, the step still showed green, and
+          # the old SVG stayed forever with no visible sign anything was
+          # wrong. That's the exact failure mode this exists to close.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed successfully (attempt $attempt)."
+              exit 0
+            fi
+            echo "Push rejected on attempt $attempt — pulling and retrying..."
+            git pull --rebase
+          done
+
+          echo "::error::Failed to push neofetch card after 3 attempts."
+          exit 1
