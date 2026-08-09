@@ -1,30 +1,5 @@
 <div align="center">
 
-<img src="./assets/signature.svg" alt="Hi, I'm Nathan" width="520"/>
-
-<samp>BACKEND ENGINEERING &nbsp;·&nbsp; APPLIED AI &nbsp;·&nbsp; SOFTWARE SYSTEMS</samp>
-
-<br/><br/>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/nathan-bijo)
-[![Portfolio](https://img.shields.io/badge/nathanbijo.dev-1E293B?style=flat-square&logo=googlechrome&logoColor=88C0D0)](https://nathanbijo.dev)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:nathan.bijo@gmail.com)
-
-</div>
-
-<br/>
-
-Backends, cryptography, and a weakness for problems that live in the messy part —
-crooked invoice scans, streets nobody has mapped, data that refuses to behave.
-
-<samp>**NOW** ▸ building [**Padosi**](https://github.com/Nathanbijo/padosi) · simulation software at STEAG Energy</samp>
-
-<br/>
-
-## Neofetch
-
-<div align="center">
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_mode.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/light_mode.svg">
