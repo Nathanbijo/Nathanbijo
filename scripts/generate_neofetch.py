@@ -77,7 +77,7 @@ PLACEHOLDER_STATS = {
     "UPTIME": "\u2014 (set START_DATE below)",
 }
 STAT_KEYS = ("REPOS", "CONTRIB", "COMMITS", "LOC", "LOC_ADD", "LOC_DEL", "UPTIME")
-START_DATE = "2006-01-04"  # e.g. "2022-07-01" — decide what "Uptime" measures for you
+START_DATE = 2006-01-04 # e.g. "2022-07-01" — decide what "Uptime" measures for you
 
 # Colors taken literally from the two HTML exports — not restyled.
 THEMES = {
