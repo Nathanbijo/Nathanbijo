@@ -74,8 +74,8 @@ text, tspan {white-space: pre;}
 <tspan x="526.1" y="90.0" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="543.1" y="90.0" class="key" textLength="51.0" lengthAdjust="spacingAndGlyphs">Uptime</tspan>
 <tspan x="594.1" y="90.0" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
-<tspan x="602.6" y="90.0" class="cc" textLength="280.5" lengthAdjust="spacingAndGlyphs"> ............................... </tspan>
-<tspan x="883.1" y="90.0" class="value" textLength="204.0" lengthAdjust="spacingAndGlyphs">— (set START_DATE below)</tspan>
+<tspan x="602.6" y="90.0" class="cc" textLength="365.5" lengthAdjust="spacingAndGlyphs"> ......................................... </tspan>
+<tspan x="968.1" y="90.0" class="value" textLength="119.0" lengthAdjust="spacingAndGlyphs">{{START_DATE}}</tspan>
 <tspan x="526.1" y="110.0" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
 <tspan x="543.1" y="110.0" class="key" textLength="34.0" lengthAdjust="spacingAndGlyphs">Host</tspan>
 <tspan x="577.1" y="110.0" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
@@ -175,9 +175,9 @@ text, tspan {white-space: pre;}
 <tspan x="747.1" y="530.0" class="cc" textLength="93.5" lengthAdjust="spacingAndGlyphs"> ......... </tspan>
 <tspan x="840.6" y="530.0" class="value" textLength="51.0" lengthAdjust="spacingAndGlyphs">11,908</tspan>
 <tspan x="891.6" y="530.0" class="cc" textLength="25.5" lengthAdjust="spacingAndGlyphs"> ( </tspan>
-<tspan x="917.1" y="530.0" class="addColor" textLength="68.0" lengthAdjust="spacingAndGlyphs">22,351++</tspan>
+<tspan x="917.1" y="530.0" class="addColor" textLength="68.0" lengthAdjust="spacingAndGlyphs">22,352++</tspan>
 <tspan x="985.1" y="530.0" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">, </tspan>
-<tspan x="1002.1" y="530.0" class="delColor" textLength="68.0" lengthAdjust="spacingAndGlyphs">10,443--</tspan>
+<tspan x="1002.1" y="530.0" class="delColor" textLength="68.0" lengthAdjust="spacingAndGlyphs">10,444--</tspan>
 <tspan x="1070.1" y="530.0" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs"> )</tspan>
 </text>
 </g>
