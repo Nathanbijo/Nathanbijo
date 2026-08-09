@@ -28,7 +28,7 @@ crooked invoice scans, streets nobody has mapped, data that refuses to behave.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_mode.svg">
   <source media="(prefers-color-scheme: light)" srcset="./assets/light_mode.svg">
-  <img alt="neofetch-style profile card" src="./assets/dark_mode.svg" width="100%"/>
+  <img alt="neofetch-style profile card" src="./assets/dark_mode.svg" width="1071"/>
 </picture>
 
 <br/><br/>
