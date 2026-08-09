@@ -45,13 +45,14 @@ FIELDS = [
         ("Kernel", "Simulation Software Engineering Intern"),
         ("IDE", "VS Code, Neovim"),
         None,
-        ("Languages.Programming", "Python, TypeScript, Java, SQL"),
+        ("Languages.Programming", "Python, JavaScript, SQL, C, C++"),
         ("Languages.Computer", "HTML, CSS, JSON, LaTeX, YAML"),
         ("Languages.Real", "English, Malayalam, Hindi"),
+        ("Backend", "FastAPI, Express, PostgreSQL, Docker"),
         None,
-        ("Projects.WARESYS", "OCR invoice pipeline, 95% accuracy"),
-        ("Projects.MarketFlow", "URL to branded social posts"),
-        ("Projects.Padosi", "Neighbourhood ranking [WIP]"),
+        ("Projects.WARESYS", "OCR invoice-to-inventory, 95% acc., patent-pending"),
+        ("Projects.MarketFlow", "URL to branded posts via Llama 3"),
+        ("Projects.Padosi", "Kochi liveability + knowledge map [WIP]"),
         None,
         ("Honors", "Cryptography, Neurobots Finalist @ IIT Palakkad"),
     ]),
@@ -62,15 +63,22 @@ FIELDS = [
         ("Portfolio", "nathanbijo.dev"),
     ]),
     ("- GitHub Stats", [
-        [("Repos", "{{REPOS}}"), ("Stars", "{{STARS}}")],
-        [("Commits", "{{COMMITS}}"), ("Followers", "{{FOLLOWERS}}")],
+        ("Repos", "{{REPOS}} {Contributed: {{CONTRIB}}}"),
+        ("Commits", "{{COMMITS}}"),
+        ("Lines of Code on GitHub", [
+            ("{{LOC}}", "value"), (" ( ", "cc"),
+            ("{{LOC_ADD}}++", "addColor"), (", ", "cc"),
+            ("{{LOC_DEL}}--", "delColor"), (" )", "cc"),
+        ]),
     ]),
 ]
 
 PLACEHOLDER_STATS = {
-    "REPOS": "\u2014", "STARS": "\u2014", "COMMITS": "\u2014", "FOLLOWERS": "\u2014",
+    "REPOS": "\u2014", "CONTRIB": "\u2014", "COMMITS": "\u2014",
+    "LOC": "\u2014", "LOC_ADD": "0", "LOC_DEL": "0",
     "UPTIME": "\u2014 (set START_DATE below)",
 }
+STAT_KEYS = ("REPOS", "CONTRIB", "COMMITS", "LOC", "LOC_ADD", "LOC_DEL", "UPTIME")
 START_DATE = None  # e.g. "2022-07-01" — decide what "Uptime" measures for you
 
 # Colors taken literally from the two HTML exports — not restyled.
@@ -129,37 +137,177 @@ def compute_uptime():
     return f"{years} years, {months} months, {days} days"
 
 
-def fetch_live_stats(token=None):
+EXCLUDE_DIRS = {"node_modules", "dist", "build", "vendor", "__pycache__",
+                 ".venv", "venv", ".next", "target", "bin", "obj", ".git"}
+EXCLUDE_FILES = {"package-lock.json", "yarn.lock", "pnpm-lock.yaml",
+                  "poetry.lock", "Pipfile.lock", "Cargo.lock"}
+
+
+def _github_get(url, headers):
     import json
     import urllib.request
+    req = urllib.request.Request(url, headers=headers)
+    with urllib.request.urlopen(req, timeout=15) as r:
+        return json.load(r)
+
+
+def _github_graphql(query, variables, headers):
+    import json
+    import urllib.request
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": variables}).encode(),
+        headers={**headers, "Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return json.load(r)
+
+
+def _commits_and_contributed(token, headers):
+    """totalCommitContributions / totalRepositoriesWithContributedCommits are
+    both scoped to the query's from/to range, capped at 1 year by GitHub —
+    there's no single query for an all-time total. Loop year by year from
+    account creation, summing commits and collecting distinct repo names
+    (summing repo counts directly would double-count a repo touched in
+    multiple years)."""
+    import datetime
+
+    if not token:
+        return None, None
+    try:
+        user = _github_get(f"https://api.github.com/users/{GITHUB_USER}", headers)
+        start_year = int(user["created_at"][:4])
+    except Exception:
+        return None, None
+
+    query = """
+    query($login:String!, $from:DateTime!, $to:DateTime!) {
+      user(login:$login) {
+        contributionsCollection(from:$from, to:$to) {
+          totalCommitContributions
+          commitContributionsByRepository(maxRepositories:100) {
+            repository { nameWithOwner }
+          }
+        }
+      }
+    }"""
+    total_commits = 0
+    contributed = set()
+    this_year = datetime.date.today().year
+    for year in range(start_year, this_year + 1):
+        frm = f"{year}-01-01T00:00:00Z"
+        to = (f"{year}-12-31T23:59:59Z" if year < this_year
+              else datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"))
+        try:
+            data = _github_graphql(query, {"login": GITHUB_USER, "from": frm, "to": to}, headers)
+            cc = data["data"]["user"]["contributionsCollection"]
+            total_commits += cc["totalCommitContributions"]
+            for node in cc["commitContributionsByRepository"]:
+                contributed.add(node["repository"]["nameWithOwner"])
+        except Exception:
+            continue
+    return total_commits, len(contributed)
+
+
+def _lines_of_code(repos, token, user_info):
+    """Clone each owned, non-fork repo and sum `git log --numstat`, filtered
+    to this author's commits. Vendored/generated paths (node_modules, lock
+    files, build output, ...) are excluded — verified against a real repo
+    during development: one accidentally-committed node_modules turned a
+    true ~5k-line contribution into a fake 589k. Public repos clone without
+    a token; a token is only needed to also include private ones."""
+    import re as _re
+    import subprocess
+    import tempfile
+
+    emails = {"nathan.bijo@gmail.com"}
+    if user_info.get("id"):
+        emails.add(f"{user_info['id']}+{GITHUB_USER}@users.noreply.github.com")
+    if user_info.get("email"):
+        emails.add(user_info["email"])
+    author_pattern = "|".join(_re.escape(e) for e in emails)
+
+    add_total = del_total = 0
+    with tempfile.TemporaryDirectory() as tmp:
+        for repo in repos:
+            if repo.get("fork"):
+                continue
+            url = repo["clone_url"]
+            if token:
+                url = url.replace("https://", f"https://{token}@")
+            dest = os.path.join(tmp, repo["name"])
+            try:
+                subprocess.run(
+                    ["git", "clone", "--quiet", "--no-tags", url, dest],
+                    check=True, timeout=180,
+                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                )
+                out = subprocess.run(
+                    ["git", "-C", dest, "log", f"--author={author_pattern}",
+                     "--perl-regexp", "--pretty=tformat:", "--numstat"],
+                    check=True, timeout=90, capture_output=True, text=True,
+                ).stdout
+            except Exception:
+                continue
+            for line in out.splitlines():
+                parts = line.split("\t")
+                if len(parts) != 3 or not parts[0].isdigit() or not parts[1].isdigit():
+                    continue  # binary files report "-" for both counts
+                path_parts = parts[2].split("/")
+                if any(d in EXCLUDE_DIRS for d in path_parts) or path_parts[-1] in EXCLUDE_FILES:
+                    continue
+                add_total += int(parts[0])
+                del_total += int(parts[1])
+    return add_total, del_total
+
+
+def fetch_live_stats(token=None):
     headers = {"Accept": "application/vnd.github+json"}
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
-    def get(url):
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=15) as r:
-            return json.load(r)
+    user = _github_get(f"https://api.github.com/users/{GITHUB_USER}", headers)
+    repos = _github_get(f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100", headers)
+    repos = repos if isinstance(repos, list) else []
 
-    user = get(f"https://api.github.com/users/{GITHUB_USER}")
-    repos = get(f"https://api.github.com/users/{GITHUB_USER}/repos?per_page=100")
-    stars = sum(r.get("stargazers_count", 0) for r in repos) if isinstance(repos, list) else 0
-    return {
-        "REPOS": str(user.get("public_repos", "\u2014")),
-        "STARS": str(stars),
-        "FOLLOWERS": str(user.get("followers", "\u2014")),
-        "COMMITS": PLACEHOLDER_STATS["COMMITS"],  # needs GraphQL + PAT
-    }
+    stats = dict(PLACEHOLDER_STATS)
+    stats["REPOS"] = str(user.get("public_repos", "\u2014"))
+
+    commits, contributed = _commits_and_contributed(token, headers)
+    if commits is not None:
+        stats["COMMITS"] = f"{commits:,}"
+        stats["CONTRIB"] = str(contributed)
+
+    add_total, del_total = _lines_of_code(repos, token, user)
+    stats["LOC"] = f"{add_total - del_total:,}"
+    stats["LOC_ADD"] = f"{add_total:,}"
+    stats["LOC_DEL"] = f"{del_total:,}"
+
+    return stats
 
 
 def _resolve(value, stats):
-    for k in ("REPOS", "STARS", "COMMITS", "FOLLOWERS", "UPTIME"):
-        value = value.replace("{{%s}}" % k, stats[k])
-    return value
+    """value is either a plain string, or a list of (text, css_class) segments
+    for rows that need multiple colors (e.g. the LOC row's green ++ / red --).
+    Placeholder substitution happens either way; the return type matches input."""
+    def sub(text):
+        for k in STAT_KEYS:
+            text = text.replace("{{%s}}" % k, stats[k])
+        return text
+
+    if isinstance(value, list):
+        return [(sub(text), cls) for text, cls in value]
+    return sub(value)
+
+
+def _value_len(value):
+    if isinstance(value, list):
+        return sum(len(text) for text, _ in value)
+    return len(value)
 
 
 def _iter_single_rows(stats):
-    """Yield (label, value) for every plain row across all sections —
+    """Yield (label, resolved_value) for every plain row across all sections —
     used to size the stats column to actual content instead of a guess."""
     for _, rows in FIELDS:
         for row in rows:
@@ -172,14 +320,14 @@ def compute_stats_cols(stats):
     """Card width (in characters) is driven by content, not a fixed guess —
     the longest single-value line plus a little breathing room."""
     longest = max(
-        (len(label) + 1 + len(value) + 2 for label, value in _iter_single_rows(stats)),
+        (len(label) + 1 + _value_len(value) + 2 for label, value in _iter_single_rows(stats)),
         default=40,
     )
     return longest + COL_PAD
 
 
-def dotted(label, value, width):
-    used = len(label) + 1 + len(value) + 2
+def dotted(label, value_len, width):
+    used = len(label) + 1 + value_len + 2
     n = max(1, width - used)
     return " " + "." * n + " "
 
@@ -187,7 +335,7 @@ def dotted(label, value, width):
 def check_overflow(stats, stats_cols):
     problems = []
     for label, value in _iter_single_rows(stats):
-        used = len(label) + 1 + len(value) + 2
+        used = len(label) + 1 + _value_len(value) + 2
         if used > stats_cols:
             problems.append(f"{label!r} -> {used}/{stats_cols} cols")
     if problems:
@@ -370,7 +518,7 @@ text, tspan {{white-space: pre;}}
                 cx = _emit_segments(p, cx, y, [(". ", "cc", 2)])
                 for j, (label, value) in enumerate(row):
                     value = _resolve(value, stats)
-                    fill = dotted(label, value, half_cols)
+                    fill = dotted(label, len(value), half_cols)
                     segs = _label_segments(label) + [
                         (":", "cc", 1), (fill, "cc", len(fill)), (value, "value", len(value)),
                     ]
@@ -382,11 +530,20 @@ text, tspan {{white-space: pre;}}
 
             label, value = row
             value = _resolve(value, stats)
-            fill = dotted(label, value, stats_cols)
-            segs = (
-                [(". ", "cc", 2)] + _label_segments(label)
-                + [(":", "cc", 1), (fill, "cc", len(fill)), (value, "value", len(value))]
-            )
+            if isinstance(value, list):
+                # Multi-color value — e.g. LOC row: net figure + green ++ / red --
+                fill = dotted(label, _value_len(value), stats_cols)
+                segs = (
+                    [(". ", "cc", 2)] + _label_segments(label)
+                    + [(":", "cc", 1), (fill, "cc", len(fill))]
+                    + [(text, cls, len(text)) for text, cls in value]
+                )
+            else:
+                fill = dotted(label, len(value), stats_cols)
+                segs = (
+                    [(". ", "cc", 2)] + _label_segments(label)
+                    + [(":", "cc", 1), (fill, "cc", len(fill)), (value, "value", len(value))]
+                )
             _emit_segments(p, col_x, y, segs)
             y += LINE_H
         y += LINE_H
