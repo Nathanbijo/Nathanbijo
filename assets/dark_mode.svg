@@ -19,6 +19,7 @@ text, tspan {white-space: pre;}
 <text x="15" y="30" fill="#ffffff" font-size="16px">
 <tspan x="15.0" y="30.0" textLength="127.5" lengthAdjust="spacingAndGlyphs">nathan@bijo:~$ </tspan>
 </text>
+<<<<<<< HEAD
 <clipPath id="typeClip-dark"><rect x="142.5" y="14" width="0" height="22"><animate attributeName="width" begin="0.40s" dur="0.88s" calcMode="discrete" fill="freeze" keyTimes="0.0000;0.1250;0.2500;0.3750;0.5000;0.6250;0.7500;0.8750;1.0000" values="0.0;8.5;17.0;25.5;34.0;42.5;51.0;59.5;68.0"/></rect></clipPath>
 <g clip-path="url(#typeClip-dark)">
 <text x="142.5" y="30" fill="#ffffff" font-size="16px"><tspan x="142.5" y="30" textLength="68.0" lengthAdjust="spacingAndGlyphs">neofetch</tspan></text>
@@ -188,3 +189,127 @@ text, tspan {white-space: pre;}
 </text>
 </g>
 </svg>
+=======
+<text x="715.0" y="30" fill="#ffffff" font-size="16px">
+<tspan x="715.0" y="30" textLength="93.5" lengthAdjust="spacingAndGlyphs">nathan@bijo</tspan> -————————————————————————————————————————————-—-
+<tspan x="715.0" y="50" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="50" class="key" textLength="17.0" lengthAdjust="spacingAndGlyphs">OS</tspan>
+<tspan x="749.0" y="50" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="757.5" y="50" class="cc" textLength="289.0" lengthAdjust="spacingAndGlyphs"> ................................ </tspan>
+<tspan x="1046.5" y="50" class="value" textLength="178.5" lengthAdjust="spacingAndGlyphs">Fedora Linux, Android</tspan>
+<tspan x="715.0" y="70" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="70" class="key" textLength="51.0" lengthAdjust="spacingAndGlyphs">Uptime</tspan>
+<tspan x="783.0" y="70" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="791.5" y="70" class="cc" textLength="229.5" lengthAdjust="spacingAndGlyphs"> ......................... </tspan>
+<tspan x="1021.0" y="70" class="value" textLength="204.0" lengthAdjust="spacingAndGlyphs">— (set START_DATE below)</tspan>
+<tspan x="715.0" y="90" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="90" class="key" textLength="34.0" lengthAdjust="spacingAndGlyphs">Host</tspan>
+<tspan x="766.0" y="90" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="774.5" y="90" class="cc" textLength="272.0" lengthAdjust="spacingAndGlyphs"> .............................. </tspan>
+<tspan x="1046.5" y="90" class="value" textLength="178.5" lengthAdjust="spacingAndGlyphs">STEAG Energy Services</tspan>
+<tspan x="715.0" y="110" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="110" class="key" textLength="51.0" lengthAdjust="spacingAndGlyphs">Kernel</tspan>
+<tspan x="783.0" y="110" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="791.5" y="110" class="cc" textLength="110.5" lengthAdjust="spacingAndGlyphs"> ........... </tspan>
+<tspan x="902.0" y="110" class="value" textLength="323.0" lengthAdjust="spacingAndGlyphs">Simulation Software Engineering Intern</tspan>
+<tspan x="715.0" y="130" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="130" class="key" textLength="25.5" lengthAdjust="spacingAndGlyphs">IDE</tspan>
+<tspan x="757.5" y="130" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="766.0" y="130" class="cc" textLength="331.5" lengthAdjust="spacingAndGlyphs"> ..................................... </tspan>
+<tspan x="1097.5" y="130" class="value" textLength="127.5" lengthAdjust="spacingAndGlyphs">VS Code, Neovim</tspan>
+<tspan x="715.0" y="150" class="cc">. </tspan>
+<tspan x="715.0" y="170" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="170" class="key" textLength="76.5" lengthAdjust="spacingAndGlyphs">Languages</tspan>
+<tspan x="808.5" y="170" class="key" textLength="8.5" lengthAdjust="spacingAndGlyphs">.</tspan>
+<tspan x="817.0" y="170" class="key" textLength="93.5" lengthAdjust="spacingAndGlyphs">Programming</tspan>
+<tspan x="910.5" y="170" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="919.0" y="170" class="cc" textLength="59.5" lengthAdjust="spacingAndGlyphs"> ..... </tspan>
+<tspan x="978.5" y="170" class="value" textLength="246.5" lengthAdjust="spacingAndGlyphs">Python, TypeScript, Java, SQL</tspan>
+<tspan x="715.0" y="190" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="190" class="key" textLength="76.5" lengthAdjust="spacingAndGlyphs">Languages</tspan>
+<tspan x="808.5" y="190" class="key" textLength="8.5" lengthAdjust="spacingAndGlyphs">.</tspan>
+<tspan x="817.0" y="190" class="key" textLength="68.0" lengthAdjust="spacingAndGlyphs">Computer</tspan>
+<tspan x="885.0" y="190" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="893.5" y="190" class="cc" textLength="93.5" lengthAdjust="spacingAndGlyphs"> ......... </tspan>
+<tspan x="987.0" y="190" class="value" textLength="238.0" lengthAdjust="spacingAndGlyphs">HTML, CSS, JSON, LaTeX, YAML</tspan>
+<tspan x="715.0" y="210" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="210" class="key" textLength="76.5" lengthAdjust="spacingAndGlyphs">Languages</tspan>
+<tspan x="808.5" y="210" class="key" textLength="8.5" lengthAdjust="spacingAndGlyphs">.</tspan>
+<tspan x="817.0" y="210" class="key" textLength="34.0" lengthAdjust="spacingAndGlyphs">Real</tspan>
+<tspan x="851.0" y="210" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="859.5" y="210" class="cc" textLength="153.0" lengthAdjust="spacingAndGlyphs"> ................ </tspan>
+<tspan x="1012.5" y="210" class="value" textLength="212.5" lengthAdjust="spacingAndGlyphs">English, Malayalam, Hindi</tspan>
+<tspan x="715.0" y="230" class="cc">. </tspan>
+<tspan x="715.0" y="250" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="250" class="key" textLength="68.0" lengthAdjust="spacingAndGlyphs">Projects</tspan>
+<tspan x="800.0" y="250" class="key" textLength="8.5" lengthAdjust="spacingAndGlyphs">.</tspan>
+<tspan x="808.5" y="250" class="key" textLength="59.5" lengthAdjust="spacingAndGlyphs">WARESYS</tspan>
+<tspan x="868.0" y="250" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="876.5" y="250" class="cc" textLength="59.5" lengthAdjust="spacingAndGlyphs"> ..... </tspan>
+<tspan x="936.0" y="250" class="value" textLength="289.0" lengthAdjust="spacingAndGlyphs">OCR invoice pipeline, 95% accuracy</tspan>
+<tspan x="715.0" y="270" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="270" class="key" textLength="68.0" lengthAdjust="spacingAndGlyphs">Projects</tspan>
+<tspan x="800.0" y="270" class="key" textLength="8.5" lengthAdjust="spacingAndGlyphs">.</tspan>
+<tspan x="808.5" y="270" class="key" textLength="85.0" lengthAdjust="spacingAndGlyphs">MarketFlow</tspan>
+<tspan x="893.5" y="270" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="902.0" y="270" class="cc" textLength="93.5" lengthAdjust="spacingAndGlyphs"> ......... </tspan>
+<tspan x="995.5" y="270" class="value" textLength="229.5" lengthAdjust="spacingAndGlyphs">URL to branded social posts</tspan>
+<tspan x="715.0" y="290" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="290" class="key" textLength="68.0" lengthAdjust="spacingAndGlyphs">Projects</tspan>
+<tspan x="800.0" y="290" class="key" textLength="8.5" lengthAdjust="spacingAndGlyphs">.</tspan>
+<tspan x="808.5" y="290" class="key" textLength="51.0" lengthAdjust="spacingAndGlyphs">Padosi</tspan>
+<tspan x="859.5" y="290" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="868.0" y="290" class="cc" textLength="127.5" lengthAdjust="spacingAndGlyphs"> ............. </tspan>
+<tspan x="995.5" y="290" class="value" textLength="229.5" lengthAdjust="spacingAndGlyphs">Neighbourhood ranking [WIP]</tspan>
+<tspan x="715.0" y="310" class="cc">. </tspan>
+<tspan x="715.0" y="330" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="330" class="key" textLength="51.0" lengthAdjust="spacingAndGlyphs">Honors</tspan>
+<tspan x="783.0" y="330" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="791.5" y="330" class="cc" textLength="34.0" lengthAdjust="spacingAndGlyphs"> .. </tspan>
+<tspan x="825.5" y="330" class="value" textLength="399.5" lengthAdjust="spacingAndGlyphs">Cryptography, Neurobots Finalist @ IIT Palakkad</tspan>
+<tspan x="715.0" y="370" textLength="76.5" lengthAdjust="spacingAndGlyphs">- Contact</tspan> -————————————————————————————————————————————-—-
+<tspan x="715.0" y="390" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="390" class="key" textLength="42.5" lengthAdjust="spacingAndGlyphs">Email</tspan>
+<tspan x="774.5" y="390" class="key" textLength="8.5" lengthAdjust="spacingAndGlyphs">.</tspan>
+<tspan x="783.0" y="390" class="key" textLength="68.0" lengthAdjust="spacingAndGlyphs">Personal</tspan>
+<tspan x="851.0" y="390" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="859.5" y="390" class="cc" textLength="187.0" lengthAdjust="spacingAndGlyphs"> .................... </tspan>
+<tspan x="1046.5" y="390" class="value" textLength="178.5" lengthAdjust="spacingAndGlyphs">nathan.bijo@gmail.com</tspan>
+<tspan x="715.0" y="410" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="410" class="key" textLength="68.0" lengthAdjust="spacingAndGlyphs">LinkedIn</tspan>
+<tspan x="800.0" y="410" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="808.5" y="410" class="cc" textLength="323.0" lengthAdjust="spacingAndGlyphs"> .................................... </tspan>
+<tspan x="1131.5" y="410" class="value" textLength="93.5" lengthAdjust="spacingAndGlyphs">nathan-bijo</tspan>
+<tspan x="715.0" y="430" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="430" class="key" textLength="51.0" lengthAdjust="spacingAndGlyphs">GitHub</tspan>
+<tspan x="783.0" y="430" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="791.5" y="430" class="cc" textLength="348.5" lengthAdjust="spacingAndGlyphs"> ....................................... </tspan>
+<tspan x="1140.0" y="430" class="value" textLength="85.0" lengthAdjust="spacingAndGlyphs">Nathanbijo</tspan>
+<tspan x="715.0" y="450" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="450" class="key" textLength="76.5" lengthAdjust="spacingAndGlyphs">Portfolio</tspan>
+<tspan x="808.5" y="450" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="817.0" y="450" class="cc" textLength="289.0" lengthAdjust="spacingAndGlyphs"> ................................ </tspan>
+<tspan x="1106.0" y="450" class="value" textLength="119.0" lengthAdjust="spacingAndGlyphs">nathanbijo.dev</tspan>
+<tspan x="715.0" y="490" textLength="119.0" lengthAdjust="spacingAndGlyphs">- GitHub Stats</tspan> -————————————————————————————————————————————-—-
+<tspan x="715.0" y="510" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="510" class="key" textLength="42.5" lengthAdjust="spacingAndGlyphs">Repos</tspan>
+<tspan x="774.5" y="510" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="783.0" y="510" class="cc" textLength="433.5" lengthAdjust="spacingAndGlyphs"> ................................................. </tspan>
+<tspan x="1216.5" y="510" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">9</tspan>
+<tspan x="715.0" y="530" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="530" class="key" textLength="42.5" lengthAdjust="spacingAndGlyphs">Stars</tspan>
+<tspan x="774.5" y="530" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="783.0" y="530" class="cc" textLength="433.5" lengthAdjust="spacingAndGlyphs"> ................................................. </tspan>
+<tspan x="1216.5" y="530" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">2</tspan>
+<tspan x="715.0" y="550" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="550" class="key" textLength="59.5" lengthAdjust="spacingAndGlyphs">Commits</tspan>
+<tspan x="791.5" y="550" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="800.0" y="550" class="cc" textLength="416.5" lengthAdjust="spacingAndGlyphs"> ............................................... </tspan>
+<tspan x="1216.5" y="550" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">—</tspan>
+<tspan x="715.0" y="570" class="cc" textLength="17.0" lengthAdjust="spacingAndGlyphs">. </tspan>
+<tspan x="732.0" y="570" class="key" textLength="76.5" lengthAdjust="spacingAndGlyphs">Followers</tspan>
+<tspan x="808.5" y="570" class="cc" textLength="8.5" lengthAdjust="spacingAndGlyphs">:</tspan>
+<tspan x="817.0" y="570" class="cc" textLength="399.5" lengthAdjust="spacingAndGlyphs"> ............................................. </tspan>
+<tspan x="1216.5" y="570" class="value" textLength="8.5" lengthAdjust="spacingAndGlyphs">4</tspan>
+</text></svg>
+>>>>>>> 32af1ebb5fa4dd5411bbfed4a2441d78273eb598
